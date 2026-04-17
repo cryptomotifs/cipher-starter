@@ -99,10 +99,27 @@ A: No. Not a recommendation on any trade, token, or security. Engineering + stra
 
 ---
 
+## Read more
+
+Writeups that expand on the bundle:
+
+- **[10 non-obvious findings from the playbook build](https://dev.to/sai_93caeceb4f6a4d9969910/i-built-a-solana-signal-engine-solo-heres-the-150-page-playbook-246k)** (dev.to) — wallet compromise postmortem, MEV sandwich tax math, 3-tier wallet architecture, Canadian NI 31-103 exemption, SR&ED credit, 30-day paper gate.
+- **[I shipped an x402 AI-crawler paywall in 3 hours on Vercel's free tier](https://dev.to/sai_93caeceb4f6a4d9969910/i-shipped-an-x402-ai-crawler-paywall-in-3-hours-on-vercels-free-tier-272m)** (dev.to) — the Next.js 16 + `@x402/next` stack, the three deploy gotchas, full proxy code.
+- Also on Hashnode: [solana-developer.hashnode.dev](https://solana-developer.hashnode.dev/)
+
+## x402 gated premium (experimental)
+
+Paid-per-request expansion chapters, settled on-chain in USDC on Base. AI agents auto-pay, humans read free on GitHub.
+
+- Live: [https://cipher-x402.vercel.app](https://cipher-x402.vercel.app)
+- Chapter 2.5 — MEV Deep Dive: `GET /premium/mev-deep-dive` returns HTTP 402 with v2 accept-list ($0.25 USDC on Base, asset `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, payTo `0xa0630fAD18C732e94D56d2D5F630963eb8fB9640`)
+
+---
+
 ## Contact
 
-- DM on Twitter/X — link TBD
+- Mastodon: [@cryptomotifs@techhub.social](https://techhub.social/@cryptomotifs)
 - GitHub issues — for bundle errata / typo PRs
-- Discord (paid tier) — after TX memo sent to the wallet
+- Discord — after tip TX memo sent to the Solana wallet
 
 Built by someone who actually did the work. Questions → open a GitHub issue.
