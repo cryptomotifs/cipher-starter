@@ -29,21 +29,28 @@ All 12 playbooks are public in `bundle/`:
 
 ## 💜 Support the work
 
-**Buy the PDF bundle (64-page signed PDF, pay-what-you-want, min $5):**
-- Gumroad: **https://amrindermagic.gumroad.com/l/ybrdfl** *(draft, pending Stripe payout connection — unlock eta TBD)*
-- Payhip store: **https://payhip.com/Cryptomotifscryptomotifs** *(account live, product-create blocked on plupload file-upload handshake)*
+### Wallet-direct (instant, no platform, no KYC)
 
-Both channels paid above the GitHub copy — same 12 chapters, one signed PDF, convenience only.
+Send any amount to the chain of your choice:
 
-**Tip jar (instant, no platform):** send any amount of SOL or USDC-SPL to
+| Chain | Asset | Address |
+|-------|-------|---------|
+| Solana | SOL / USDC-SPL | `cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy` |
+| Base / Ethereum / Polygon / Arbitrum / Optimism | USDC | `0x2a33D2414312e8776dA4011c2586c2d067267210` |
+| Bitcoin | BTC | `bc1qeg97njaccajx95as5k3gelrpx0umlw6dhhtfc6` |
 
-**`cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy`**
+### Also selling: x402 Paid Endpoint Starter Kit — $15
+
+A Next.js 16 starter for the x402 payment protocol. Working repo + middleware + 7-page tutorial PDF + `.env.example` + one-command Vercel deploy.
+
+**How to buy**: send **$15 USD-equivalent** to any wallet above, then email the TX hash to **amrinder847@gmail.com** with subject `[x402-kit] <chain>:<tx-hash>`. ZIP delivered to your inbox, automated.
 
 Suggested tiers:
-- **0.05 SOL** (~$4) — coffee
-- **0.1 SOL** (~$9) — fair for the bundle
-- **0.5 SOL** (~$45) — supports v2 (live paper-trade data, backtest results, Discord access)
-- **1+ SOL** — named patron, 1:1 architecture review call
+- **0.05 SOL / $5 USDC** — coffee
+- **0.1 SOL / $9 USDC** — fair for the bundle
+- **$15 USDC** — includes the x402 Starter Kit ZIP (email TX hash for delivery)
+- **0.5 SOL / $45 USDC** — supports v2 (live paper-trade data, backtest results, Discord access)
+- **1 SOL+ / $100 USDC+** — named patron, 1:1 architecture review call
 
 Landing page with QR code: **https://cryptomotifs.github.io/cipher-starter/**
 
@@ -115,7 +122,7 @@ Writeups that expand on the bundle:
 
 ## x402 gated premium (experimental)
 
-Paid-per-request expansion chapters, settled on-chain in USDC on Base. AI agents auto-pay, humans read free on GitHub. $0.25 USDC per fetch, asset `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, payTo `0xa0630fAD18C732e94D56d2D5F630963eb8fB9640`.
+Paid-per-request expansion chapters, settled on-chain in USDC on Base. AI agents auto-pay, humans read free on GitHub. $0.25 USDC per fetch, asset `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, payTo `0x2a33D2414312e8776dA4011c2586c2d067267210`.
 
 Live at [https://cipher-x402.vercel.app](https://cipher-x402.vercel.app) — four chapters gated:
 
