@@ -29,7 +29,13 @@ All 12 playbooks are public in `bundle/`:
 
 ## 💜 Support the work
 
-If the kit saves you time, send any amount of SOL or USDC-SPL:
+**Buy the PDF bundle (64-page signed PDF, pay-what-you-want, min $5):**
+- Gumroad: **https://amrindermagic.gumroad.com/l/ybrdfl** *(draft, pending Stripe payout connection — unlock eta TBD)*
+- Payhip store: **https://payhip.com/Cryptomotifscryptomotifs** *(account live, product-create blocked on plupload file-upload handshake)*
+
+Both channels paid above the GitHub copy — same 12 chapters, one signed PDF, convenience only.
+
+**Tip jar (instant, no platform):** send any amount of SOL or USDC-SPL to
 
 **`cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy`**
 
