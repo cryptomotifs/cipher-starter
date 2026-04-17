@@ -136,8 +136,11 @@ No pressure — star the repo or share it and that's equally valued.
 
 Landing page with QR code: **https://cryptomotifs.github.io/cipher-starter/**
 
-## Free tools
+## Free tools + related repos
 
+- **[cipher-solana-bot-toolkit](https://github.com/cryptomotifs/cipher-solana-bot-toolkit)** — free MIT: flash-loan router, volume bot, arb/MEV predator, memecoin launcher, copy trader. 5 scrubbed modules extracted from months of private iteration. Pair with this playbook.
+- **[cipher-x402-mcp](https://github.com/cryptomotifs/cipher-x402-mcp)** — free MIT MCP server exposing 8 Solana + macro tools to any MCP-aware client, 7 of them gated via x402 USDC on Base.
+- **[cipher-solana-wallet-audit](https://github.com/cryptomotifs/cipher-solana-wallet-audit)** — free GitHub Action (v1.1.0) that fails CI on plaintext Solana private keys.
 - **[cipher-scan](https://cipher-scan-three.vercel.app)** — paste any Solana wallet, get portfolio value + hygiene flags (dust, stale stake accounts, low-liquidity warnings) + referral CTAs for Jupiter/Backpack/Drift/Kamino. No signup, no tracking.
 
 ---
