@@ -4,6 +4,8 @@
 
 > 4 months of solo work compressed into 12 engineering + strategy + risk + compliance + infra playbooks.
 
+**Free + MIT. Fork it, ship your own, no strings.**
+
 ---
 
 ## 📚 Read it for free
@@ -27,32 +29,36 @@ All 12 playbooks are public in `bundle/`:
 
 ---
 
-## 💜 Support the work
+## 🏃 Run it yourself
 
-### Wallet-direct (instant, no platform, no KYC)
+This repo is documentation-first — no code to run, just 12 playbooks + one
+landing page. If you want to rebuild the landing page locally:
 
-Send any amount to the chain of your choice:
+### Prerequisites
 
-| Chain | Asset | Address |
-|-------|-------|---------|
-| Solana | SOL / USDC-SPL | `cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy` |
-| Base / Ethereum / Polygon / Arbitrum / Optimism | USDC | `0x2a33D2414312e8776dA4011c2586c2d067267210` |
-| Bitcoin | BTC | `bc1qeg97njaccajx95as5k3gelrpx0umlw6dhhtfc6` |
+- Any modern browser (the landing page is a single static `index.html`)
+- Optional: [GitHub Pages](https://pages.github.com/) or any static host to
+  publish your fork
 
-### Also selling: x402 Paid Endpoint Starter Kit — $15
+### Fork + publish
 
-A Next.js 16 starter for the x402 payment protocol. Working repo + middleware + 7-page tutorial PDF + `.env.example` + one-command Vercel deploy.
+```bash
+git clone https://github.com/cryptomotifs/cipher-starter
+cd cipher-starter
+# edit bundle/*.md to reflect your own research
+# edit index.html to point at your own donation wallet + handles
+# commit + push to your fork
+```
 
-**How to buy**: send **$15 USD-equivalent** to any wallet above, then email the TX hash to **amrinder847@gmail.com** with subject `[x402-kit] <chain>:<tx-hash>`. ZIP delivered to your inbox, automated.
+Then enable GitHub Pages in your fork's Settings → Pages → Source: `main /
+(root)` and your landing lives at
+`https://<your-handle>.github.io/cipher-starter/`.
 
-Suggested tiers:
-- **0.05 SOL / $5 USDC** — coffee
-- **0.1 SOL / $9 USDC** — fair for the bundle
-- **$15 USDC** — includes the x402 Starter Kit ZIP (email TX hash for delivery)
-- **0.5 SOL / $45 USDC** — supports v2 (live paper-trade data, backtest results, Discord access)
-- **1 SOL+ / $100 USDC+** — named patron, 1:1 architecture review call
+### Reuse the bundle in your own project
 
-Landing page with QR code: **https://cryptomotifs.github.io/cipher-starter/**
+The `bundle/` markdown is MIT-licensed. Copy any playbook into your own
+docs, rename it, adjust the jurisdiction / stack sections, and ship it.
+Attribution appreciated but not required.
 
 ---
 
@@ -92,20 +98,18 @@ Landing page with QR code: **https://cryptomotifs.github.io/cipher-starter/**
 - **v2** (planned 2026-05): Add 30-day live paper-trade data, backtest validation suite, performance attribution per strategy
 - **v3** (planned 2026-07): Full `cipher/trading/` Layer K reference implementation (Python, MIT-licensed)
 
-If you want v2 the day it ships: tip 0.5+ SOL and include your Discord handle in the TX memo.
-
 ---
 
 ## ❓ FAQ
 
 **Q: This is a lot of research for free. What's the catch?**
-A: None. The research is public — it's the engineering, risk discipline, and ongoing iteration that's the hard part. If the research saves you a month, a tip is a fair trade.
+A: None. The research is public — it's the engineering, risk discipline, and ongoing iteration that's the hard part. If the research saves you a month, a tip in SOL is appreciated but never required.
 
 **Q: Is this actually useful for non-Solana quants?**
 A: ~70% jurisdiction/stack-neutral. Infra, risk, security, architecture apply broadly. Trading + compliance sections are Solana / Canada specific.
 
 **Q: Can I fork it?**
-A: Yes, MIT-style. Attribution appreciated.
+A: Yes, MIT. Attribution appreciated.
 
 **Q: Investment advice?**
 A: No. Not a recommendation on any trade, token, or security. Engineering + strategy + infrastructure guidance only. Past performance does not guarantee future results. All risk is yours.
@@ -120,18 +124,17 @@ Writeups that expand on the bundle:
 - **[I shipped an x402 AI-crawler paywall in 3 hours on Vercel's free tier](https://dev.to/sai_93caeceb4f6a4d9969910/i-shipped-an-x402-ai-crawler-paywall-in-3-hours-on-vercels-free-tier-272m)** (dev.to) — the Next.js 16 + `@x402/next` stack, the three deploy gotchas, full proxy code.
 - Also on Hashnode: [solana-developer.hashnode.dev](https://solana-developer.hashnode.dev/)
 
-## x402 gated premium (experimental)
+---
 
-Paid-per-request expansion chapters, settled on-chain in USDC on Base. AI agents auto-pay, humans read free on GitHub. $0.25 USDC per fetch, asset `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, payTo `0x2a33D2414312e8776dA4011c2586c2d067267210`.
+## 🙏 Support
 
-Live at [https://cipher-x402.vercel.app](https://cipher-x402.vercel.app) — four chapters gated:
+This is free + MIT. If it saved you time, tips in SOL are appreciated:
 
-| Route | Chapter | Length |
-|-------|---------|--------|
-| `/premium/mev-deep-dive` | Jito tip math, oracle-gate bps, $1k test matrix | ~5,000 words |
-| `/premium/three-tier-wallet` | KMS envelope, isolated signer, mermaid threat tree | ~4,900 words |
-| `/premium/canadian-compliance` | NI 31-103 four hard lines, SR&ED stacking | ~4,500 words |
-| `/premium/oracle-cloud-free-tier` | Full systemd unit + Cloudflare Tunnel config | ~4,600 words |
+`cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy`
+
+No pressure — star the repo or share it and that's equally valued.
+
+Landing page with QR code: **https://cryptomotifs.github.io/cipher-starter/**
 
 ## Free tools
 
@@ -143,6 +146,5 @@ Live at [https://cipher-x402.vercel.app](https://cipher-x402.vercel.app) — fou
 
 - Mastodon: [@cryptomotifs@techhub.social](https://techhub.social/@cryptomotifs)
 - GitHub issues — for bundle errata / typo PRs
-- Discord — after tip TX memo sent to the Solana wallet
 
 Built by someone who actually did the work. Questions → open a GitHub issue.

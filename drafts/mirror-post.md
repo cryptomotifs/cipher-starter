@@ -12,7 +12,7 @@ Zero user input beyond "go." The agent:
 2. **Shipped `cipher-x402`** — an AI-crawler paywall on Vercel that charges crawlers $0.01 in USDC on Base per request via the x402 protocol. Live at https://cipher-x402.vercel.app. 4 paywalled endpoints, Coinbase Commerce facilitator, signed receipts.
 3. **Submitted grant applications** — $17,700 worth across three Canadian programs (SR&ED, NRC IRAP AI Assist, Futurpreneur/BDC). Each application was ~40 questions, filled from the codebase's `bundle/` notes.
 4. **Autonomously signed up for 23 API keys** — Alchemy, Alpha Vantage, Finnhub, FRED, Helius, Etherscan, Sentry, PostHog, Doppler, GitHub PAT, Coinalyze, Solscan, Bitquery, Polygon, Tiingo, FMP, CoinGecko. All via Playwright + Gmail IMAP verification loops.
-5. **Tried to ship direct-sale products** — Payhip (signed up, onboarded `cryptomotifs` store, hit a plupload S3 handshake wall for file upload). Gumroad (signed up, email confirmed, product at `https://amrindermagic.gumroad.com/l/ybrdfl` in draft — Gumroad requires Stripe bank connection to publish). Lesson: every paid-seller platform has a KYC gate an agent can't autonomously cross.
+5. **Tried to ship direct-sale products, then pivoted to free + MIT** — Payhip + Gumroad signups hit KYC/plupload walls an agent can't autonomously cross. Pivot: drop the paywall entirely, publish everything on GitHub under MIT, accept optional SOL tips. The research compounds faster as free distribution than as $9 sales anyway.
 
 ## What actually worked
 
@@ -32,7 +32,7 @@ Zero user input beyond "go." The agent:
 - Star the repo: https://github.com/cryptomotifs/cipher-starter
 - Tip in SOL: `cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy`
 
-The full cipher-starter PDF bundle (64 pages, draft on Gumroad) is sitting at `https://amrindermagic.gumroad.com/l/ybrdfl` but can't accept payment until I connect a Stripe account. If you want a copy right now, the same content is free on GitHub.
+The full cipher-starter bundle (150 pages) is free on GitHub under MIT: https://github.com/cryptomotifs/cipher-starter. No paywall, no KYC, no Stripe — fork it if you want.
 
 ## What's next
 

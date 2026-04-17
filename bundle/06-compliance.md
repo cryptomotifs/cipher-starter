@@ -2,7 +2,7 @@
 
 **Date**: 2026-04-17
 **Author**: Compliance/Legal Officer (internal memo, NOT legal advice)
-**Founder**: Canadian individual (`amrinder847@gmail.com`), $1,000 trading capital on Solana
+**Founder**: Canadian individual (GitHub: `cryptomotifs`), $1,000 trading capital on Solana
 **Scope**: Canadian securities law (CIRO + provincial commissions), FINTRAC, CRA tax, PIPEDA privacy
 
 > **IMPORTANT DISCLAIMER**: This is a research memo produced by an internal compliance function, not a legal opinion. Before any customer acquisition, paid subscription launch, or managed-account offering, engage a fintech securities lawyer (Osler, BLG, McCarthy Tetrault, or a specialized boutique such as McMillan or Borden Ladner Gervais fintech group). Budget CAD $3,000-$8,000 for a Phase 2 opinion letter.
