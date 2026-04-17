@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solo Crypto Quant Starter Kit — 150+ pages of research, $0/mo infra, 23 pre-captured API workflows</title>
+<meta name="description" content="The complete playbook + research + code scaffolding to build a Solana-native signal engine + autonomous trading bot by yourself, on a $0 infrastructure budget. 150+ pages. $9 floor.">
+<meta property="og:title" content="Solo Crypto Quant Starter Kit">
+<meta property="og:description" content="Skip 4 months of research. Ship your Solana quant bot in 7 days on a $0/mo stack.">
+<meta property="og:type" content="product">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --bg-elev: #14141c;
+    --text: #e4e4f0;
+    --text-dim: #8b8b9f;
+    --accent: #7c3aed;
+    --accent-hover: #8b5cf6;
+    --long: #10b981;
+    --border: #2a2a3a;
+    --mono: 'SF Mono', Menlo, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 60px 0 40px; text-align: center; }
+  header .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    padding: 4px 10px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+  h1 .accent { color: var(--accent); }
+  .sub {
+    font-size: 20px;
+    color: var(--text-dim);
+    max-width: 640px;
+    margin: 0 auto 40px;
+  }
+  .price-card {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 40px 0;
+    text-align: center;
+  }
+  .price-card .price {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--long);
+    font-family: var(--mono);
+  }
+  .price-card .price-sub {
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-top: -8px;
+    margin-bottom: 24px;
+  }
+  .sol-pay {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .sol-pay:hover { background: var(--accent-hover); }
+  .address-box {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 20px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text-dim);
+    word-break: break-all;
+  }
+  .copy-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-family: var(--mono);
+    font-size: 11px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  .copy-btn:hover { background: var(--accent); border-color: var(--accent); }
+  section { padding: 60px 0; border-top: 1px solid var(--border); }
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .feature {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+  }
+  .feature h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--accent);
+  }
+  .feature p { color: var(--text-dim); font-size: 14px; }
+  ul.toc { list-style: none; }
+  ul.toc li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  ul.toc li .num {
+    font-family: var(--mono);
+    color: var(--accent);
+    font-weight: 700;
+    min-width: 32px;
+  }
+  ul.toc li .title { flex: 1; }
+  ul.toc li .pages { color: var(--text-dim); font-family: var(--mono); font-size: 12px; }
+  .tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 24px; }
+  .tier { background: var(--bg-elev); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .tier .price-t { font-family: var(--mono); color: var(--long); font-size: 24px; font-weight: 700; }
+  .tier h4 { margin: 8px 0; }
+  .tier p { color: var(--text-dim); font-size: 13px; }
+  .faq details { background: var(--bg-elev); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; }
+  .faq summary { cursor: pointer; font-weight: 600; }
+  .faq p { color: var(--text-dim); margin-top: 12px; }
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-dim);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .disclaimer { color: var(--text-dim); font-size: 13px; font-style: italic; margin-top: 16px; }
+  #qr-canvas { display: block; margin: 24px auto; background: white; padding: 16px; border-radius: 8px; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="tag">Solo Crypto Quant Starter Kit</div>
+      <h1>4 months of research, <span class="accent">delivered</span>.</h1>
+      <p class="sub">The complete playbook + research + project scaffolding to build a Solana-native signal engine + autonomous trading bot yourself, on a <strong>$0/mo infrastructure budget</strong>. 150+ pages of engineer + trader + risk + security + compliance decisions, already made.</p>
+    </header>
+
+    <div class="price-card">
+      <div class="price">$9</div>
+      <div class="price-sub">pay what you want floor — tip more if it helps</div>
+      <a href="#pay" class="sol-pay">Pay with Solana →</a>
+    </div>
+
+    <section>
+      <h2>Who it's for</h2>
+      <p style="color: var(--text-dim); margin-bottom: 24px;">Indie developers who want to build their own quant system without burning 6 months on research and without paying for infra.</p>
+      <div class="features">
+        <div class="feature">
+          <h3>You know how to code</h3>
+          <p>Python or TypeScript fluent. The kit assumes you can read + ship production code, not learn-to-code content.</p>
+        </div>
+        <div class="feature">
+          <h3>You've tried building bots</h3>
+          <p>Maybe tried 2-3 times, flash-loan bots got arb'd away, latency killed you, or you didn't know what to prioritize. This fixes "what to build next."</p>
+        </div>
+        <div class="feature">
+          <h3>You're solo</h3>
+          <p>No team, no budget, no runway beyond what you can self-fund. Every decision in the kit is made with that constraint.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What's in the bundle</h2>
+      <ul class="toc">
+        <li><span class="num">00</span><span class="title">MASTER — 90-day $0 → autonomous bot → first customer</span><span class="pages">14 pg</span></li>
+        <li><span class="num">01</span><span class="title">Trading playbook — universe, strategy, sizing, P&L envelope</span><span class="pages">7 pg</span></li>
+        <li><span class="num">02</span><span class="title">Risk playbook — 5 circuit breakers, paper gate, kill switches</span><span class="pages">18 pg</span></li>
+        <li><span class="num">03</span><span class="title">Security playbook — 3-tier wallet, KMS, isolated signer</span><span class="pages">18 pg</span></li>
+        <li><span class="num">04</span><span class="title">Architecture gap — 18 new modules, 7-day MVP calendar</span><span class="pages">26 pg</span></li>
+        <li><span class="num">05</span><span class="title">Revenue strategy — top 3 streams, SR&ED hidden goldmine</span><span class="pages">15 pg</span></li>
+        <li><span class="num">06</span><span class="title">Compliance (Canada) — NI 31-103, CCPC timing, MSB</span><span class="pages">28 pg</span></li>
+        <li><span class="num">07</span><span class="title">Infra playbook — Oracle Cloud Always Free 24/7 deploy</span><span class="pages">26 pg</span></li>
+        <li><span class="num">08</span><span class="title">Downloads bot audit — salvage what works, 3 anti-patterns</span><span class="pages">12 pg</span></li>
+        <li><span class="num">09</span><span class="title">Tooling audit — ~1000 tools, 30 P0 picks, $0/mo stack</span><span class="pages">20 pg</span></li>
+        <li><span class="num">10</span><span class="title">Credentials needed — 13 free-tier accounts, ordered</span><span class="pages">8 pg</span></li>
+        <li><span class="num">11</span><span class="title">API signup queue — captcha-blocked flagged, skip guide</span><span class="pages">8 pg</span></li>
+      </ul>
+    </section>
+
+    <section id="pay">
+      <h2>Pay</h2>
+      <div class="tiers">
+        <div class="tier">
+          <div class="price-t">$9</div>
+          <h4>Bundle only</h4>
+          <p>All 12 documents as PDF + markdown. Lifetime.</p>
+        </div>
+        <div class="tier">
+          <div class="price-t">$19</div>
+          <h4>Bundle + Discord</h4>
+          <p>Above + private Discord for 30 days.</p>
+        </div>
+        <div class="tier">
+          <div class="price-t">$49</div>
+          <h4>Bundle + 1:1 call</h4>
+          <p>Above + 30-min architecture review.</p>
+        </div>
+        <div class="tier">
+          <div class="price-t">0.1 SOL</div>
+          <h4>Fast mint</h4>
+          <p>Any tier — pay in native SOL.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <p style="color: var(--text-dim); margin-bottom: 16px;">Send SOL or USDC (SPL) to:</p>
+        <canvas id="qr-canvas" width="220" height="220"></canvas>
+        <div class="address-box">
+          <span id="addr">cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy</span>
+          <button class="copy-btn" onclick="navigator.clipboard.writeText('cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy'); this.textContent='copied'; setTimeout(()=>this.textContent='copy', 1500);">copy</button>
+        </div>
+        <p class="disclaimer">After sending, DM the TX hash + email on <a href="https://twitter.com/" style="color: var(--accent);">Twitter</a> or post on the Discord to claim your bundle.</p>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Is this a signal subscription?</summary>
+        <p>No. You build your own bot. This kit tells you what to build, what to skip, and in what order. It's a blueprint + research, not a managed service.</p>
+      </details>
+      <details>
+        <summary>Is the research Solana-specific?</summary>
+        <p>The trading playbook is. The engineering, risk, security, compliance, and infra playbooks apply to any crypto or stock quant setup. About 70% is stack-agnostic.</p>
+      </details>
+      <details>
+        <summary>Will this work for non-Canadian founders?</summary>
+        <p>The compliance memo is Canada-specific (NI 31-103, CCPC, SR&ED). The other 11 documents are jurisdiction-neutral. US founders should substitute Alpaca + US-centric compliance advice.</p>
+      </details>
+      <details>
+        <summary>Why so cheap?</summary>
+        <p>The research is done. Distribution cost for a PDF is $0. The kit is priced as a reminder that the engineering is the hard part, not the research. $9 beats $0 (prevents the "free stuff = worthless" bias).</p>
+      </details>
+      <details>
+        <summary>Is this investment advice?</summary>
+        <p>No. It's engineering + strategy + infrastructure guidance for building your own system. No recommendations on specific trades, tokens, or securities. Past performance does not guarantee future results. All risk is yours.</p>
+      </details>
+      <details>
+        <summary>Refunds?</summary>
+        <p>Sure. DM me within 14 days if it wasn't useful. Crypto payments refunded to sending address.</p>
+      </details>
+    </section>
+
+    <footer>
+      <p>Built by someone who actually did the work. Questions → DM.</p>
+      <p class="disclaimer" style="margin-top: 12px;">Not investment advice. Not a signal subscription. You are responsible for your own trades. Canadian residents: this is educational content, not NI 31-103 advice.</p>
+    </footer>
+  </div>
+
+  <!-- Solana Pay QR via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+  <script>
+    // Build Solana Pay URL (mainnet)
+    const recipient = 'cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy';
+    const amount = '0.1';
+    const label = 'CIPHER Starter Kit';
+    const message = 'Solo Crypto Quant Starter Kit — bundle';
+    const solanaPayUrl = `solana:${recipient}?amount=${amount}&label=${encodeURIComponent(label)}&message=${encodeURIComponent(message)}`;
+
+    // Render QR
+    new QRious({
+      element: document.getElementById('qr-canvas'),
+      value: solanaPayUrl,
+      size: 220,
+      background: 'white',
+      foreground: 'black',
+    });
+  </script>
+</body>
+</html>
