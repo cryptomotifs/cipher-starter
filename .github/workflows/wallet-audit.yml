@@ -1,0 +1,18 @@
+name: Wallet Audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  scan-for-leaked-keys:
+    runs-on: ubuntu-latest
+    name: Scan for plaintext Solana keys, seed phrases, .env leaks
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run cipher-solana-wallet-audit
+        uses: cryptomotifs/cipher-solana-wallet-audit@v1
+        with:
+          fail-on: high
