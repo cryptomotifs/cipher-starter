@@ -109,10 +109,20 @@ Writeups that expand on the bundle:
 
 ## x402 gated premium (experimental)
 
-Paid-per-request expansion chapters, settled on-chain in USDC on Base. AI agents auto-pay, humans read free on GitHub.
+Paid-per-request expansion chapters, settled on-chain in USDC on Base. AI agents auto-pay, humans read free on GitHub. $0.25 USDC per fetch, asset `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, payTo `0xa0630fAD18C732e94D56d2D5F630963eb8fB9640`.
 
-- Live: [https://cipher-x402.vercel.app](https://cipher-x402.vercel.app)
-- Chapter 2.5 — MEV Deep Dive: `GET /premium/mev-deep-dive` returns HTTP 402 with v2 accept-list ($0.25 USDC on Base, asset `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, payTo `0xa0630fAD18C732e94D56d2D5F630963eb8fB9640`)
+Live at [https://cipher-x402.vercel.app](https://cipher-x402.vercel.app) — four chapters gated:
+
+| Route | Chapter | Length |
+|-------|---------|--------|
+| `/premium/mev-deep-dive` | Jito tip math, oracle-gate bps, $1k test matrix | ~5,000 words |
+| `/premium/three-tier-wallet` | KMS envelope, isolated signer, mermaid threat tree | ~4,900 words |
+| `/premium/canadian-compliance` | NI 31-103 four hard lines, SR&ED stacking | ~4,500 words |
+| `/premium/oracle-cloud-free-tier` | Full systemd unit + Cloudflare Tunnel config | ~4,600 words |
+
+## Free tools
+
+- **[cipher-scan](https://cipher-scan-three.vercel.app)** — paste any Solana wallet, get portfolio value + hygiene flags (dust, stale stake accounts, low-liquidity warnings) + referral CTAs for Jupiter/Backpack/Drift/Kamino. No signup, no tracking.
 
 ---
 
