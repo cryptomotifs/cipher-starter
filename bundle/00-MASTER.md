@@ -7,7 +7,7 @@ Consolidated from 7 parallel senior-role analyses. Individual reports in `docs/r
 
 ## 🚨 IMMEDIATE ACTION — Day 1 before anything else
 
-**Wallet A (`EDwmrmPJ3RXVLJHnfXrjSEcTza8ymEoiyc84htxoreCw`) + Wallet B (`AMgk4Lpy9zCZPeU77zxMcgRdXVGQ7KP3FGtA7VWGJwor`) are COMPROMISED.**
+**Wallet A (`<historically-compromised-wallet>`) + Wallet B (`<historically-compromised-wallet-b>`) are COMPROMISED.**
 
 The security audit of `~/Downloads/` bots confirmed: prior projects stored raw base58 private keys, mnemonic phrases as comments, and encryption passwords in plaintext `.env` files — with `.gitignore` missing `.env` in some cases. Both wallets must be treated as public.
 

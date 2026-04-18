@@ -30,7 +30,7 @@ Audit of existing bot directories in `~/Downloads/`:
 4. `.gitignore` missing `.env` — single `git add .` away from disaster.
 5. Un-rotated log files bigger than the repo itself.
 6. A single keypair doing *all* trading, balance-holding, and fee-paying.
-7. The same wallet listed as "creator" in Memory (Wallet A `EDwmrmPJ…` = the arb bot's `TRADING_WALLET_PUBKEY`) and expected to hold $1000 — IT IS ALREADY BURNED. See §8.
+7. The same wallet listed as "creator" in Memory (Wallet A `<historically-compromised-wallet>` = the arb bot's `TRADING_WALLET_PUBKEY`) and expected to hold $1000 — IT IS ALREADY BURNED. See §8.
 
 ### Patterns to keep
 - `BillingRouter` / `EnvSettings` pattern in CIPHER already gates all env access through a typed object → extend this for wallet secrets (don't let `os.environ` sprawl).
@@ -313,8 +313,8 @@ Owner: Security-track side sprint, interleaved with main CIPHER build.
 
 From the project memory, the $1000 is "on an existing Solana wallet." Based on audit:
 
-- **Wallet A `EDwmrmPJ3RXVLJHnfXrjSEcTza8ymEoiyc84htxoreCw`** is the same address as `TRADING_WALLET_PUBKEY` in `solana-arb-bot/.env`. That `.env` also contains `WALLET_PASSWORD=SolBot2026!secure` and `TRADER_PRIVATE_KEY=wCRJ2vKiy...`. The `.env` sits in a directory that has **no .gitignore entry for .env**. Treat A as compromised.
-- **Wallet B `AMgk4Lpy9zCZPeU77zxMcgRdXVGQ7KP3FGtA7VWGJwor`** is `TRADER_PRIVATE_KEY` — fully exposed plaintext. Treat B as compromised.
+- **Wallet A `<historically-compromised-wallet>`** is the same address as `TRADING_WALLET_PUBKEY` in `solana-arb-bot/.env`. That `.env` also contains `WALLET_PASSWORD=SolBot2026!secure` and `TRADER_PRIVATE_KEY=wCRJ2vKiy...`. The `.env` sits in a directory that has **no .gitignore entry for .env**. Treat A as compromised.
+- **Wallet B `<historically-compromised-wallet-b>`** is `TRADER_PRIVATE_KEY` — fully exposed plaintext. Treat B as compromised.
 - A mnemonic was committed as a comment. The mnemonic's derivation path may control additional addresses — enumerate and sweep all.
 
 ### Immediate mitigation (do before any CIPHER trading)

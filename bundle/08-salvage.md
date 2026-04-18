@@ -94,8 +94,8 @@ The name appears in older backups (e.g. `SolanaBot_Backup_2026-03-15_Revenue/Sol
 - **predator-launcher never fired**: `launcher_pnl.json` shows `{"total_spent_lamports": 0, "tokens_launched": 0, "records": []}`. Pipeline is wired end-to-end (narrative → concept → image_gen → ipfs → creator → first_buyer → fee_collector → pipeline orchestrator) but was gated on Wallet A funding that never happened.
 
 ### Wallets used (all public addresses, no secrets):
-- **Wallet A (creator):** `EDwmrmPJ3RXVLJHnfXrjSEcTza8ymEoiyc84htxoreCw` — last balance 0.657 SOL (~$54).
-- **Wallet B (trader/GMGN farming):** `AMgk4Lpy9zCZPeU77zxMcgRdXVGQ7KP3FGtA7VWGJwor` (from project memory).
+- **Wallet A (creator):** `<historically-compromised-wallet>` — last balance 0.657 SOL (~$54).
+- **Wallet B (trader/GMGN farming):** `<historically-compromised-wallet-b>` (from project memory).
 - **20 "alpha wallet" targets** tracked in `wallets.json` for copy-trading — GMGN elite, Nansen, ChainCatcher, KolScan-sourced. Top score 98.0 `2fg5QD1eD7rzNNCsvnhmXFm5hqNgwTTG8p7kQ6f3rx6f` (`gmgn_elite_2966sol_100pct_perfect`), full list in that file.
 - **EVM nonce address:** `0xc63956cE9EE629F6167C52409A78BC95689be326` (cross-chain Kamino references).
 
@@ -169,8 +169,8 @@ A progressive collapse from "self-replicating AI platform with 1000 agents" → 
 7. **Multi-region Jito endpoint dedup** (6-region parallel, SHA-256 bundle-signature dedup). Code in `predator-execution/src/jito.rs` is already documented and citation-rich.
 
 ### Wallets that held funds
-- `EDwmrmPJ3RXVLJHnfXrjSEcTza8ymEoiyc84htxoreCw` — arb-bot Wallet A (creator), 0.657 SOL.
-- `AMgk4Lpy9zCZPeU77zxMcgRdXVGQ7KP3FGtA7VWGJwor` — Wallet B (trader), 0 SOL.
+- `<historically-compromised-wallet>` — arb-bot Wallet A (creator), 0.657 SOL.
+- `<historically-compromised-wallet-b>` — Wallet B (trader), 0 SOL.
 - v3 `PRIVATE_KEY` decodes to some main-wallet address (**KEY COMPROMISED, do not use**). Inspecting the key string is enough to derive it; I did not do so to avoid adding the burned pubkey to this doc beyond the already-recorded ones.
 - Ephemeral wallets in `sol-volume-bot-v3/wallet_ledger.json`: `BfnrMbq2nym6sCPfa6jHaWocNtcFYoJcC8HGjQnpSYKJ`, `BmtwdGKaq2LptoWZaR2FvTCLRToWW9X9rQMP6MyzJWPc`, `EQPyfhNAzRNsLmrbVtShodr1xKEQTfZFy9v7ZE8ayHoE`, `5ULoj4ZBxVPWhHmQUbowpJYfCHcSoAYQJaUfdR6XTziv`, `2YfcHqeZQQoJJJLxufeY3CuGQJnAT93NG7xFhzwQixvB`, `4GKrKL5jvn1J8QZ6iVHRptkDCyhYncezBQ1JyzcifqcY`, `GUPx7BpU7PQS4asdLPyjXbwibGKvAK2eryaoY61L4h8j`, `62phQLgXHXf64eskjahs3Y9XgJEha71LFZrdx65waJF5` — all marked swept.
 

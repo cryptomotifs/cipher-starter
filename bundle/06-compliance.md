@@ -371,7 +371,7 @@ CIPHER qualifies because:
 
 ### 7.2 Workflow
 
-1. Day 1: connect Wallet A (`EDwmrmPJ3RXVLJHnfXrjSEcTza8ymEoiyc84htxoreCw`) and trading wallets (read-only) to Koinly
+1. Day 1: connect Wallet A (`<historically-compromised-wallet>`) and trading wallets (read-only) to Koinly
 2. Tag all internal transfers (bot → main → exchange) to avoid being treated as dispositions
 3. Monthly: reconcile Koinly output vs on-chain (spot-check via Solscan)
 4. Quarterly: estimate tax owing, fund instalments if required
