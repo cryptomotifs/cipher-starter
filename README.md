@@ -31,7 +31,7 @@ All 12 playbooks are public in `bundle/`:
 
 ## 🏃 Run it yourself
 
-This repo is documentation-first — no code to run, just 12 playbooks + one
+This repo is documentation-first. No code to run, just 12 playbooks plus one
 landing page. If you want to rebuild the landing page locally:
 
 ### Prerequisites
@@ -71,7 +71,7 @@ Attribution appreciated but not required.
 
 ## 🙅 Who it's NOT for
 
-- Beginners looking for "learn to code" content — this assumes production-dev skill
+- Beginners looking for "learn to code" content. This assumes production-dev skill.
 - Anyone expecting "guaranteed returns" or a managed signal subscription
 - People who don't want to touch compliance or security architecture
 
@@ -81,7 +81,7 @@ Attribution appreciated but not required.
 
 1. **Wallet A + B from prior bots were compromised** (plaintext keys in `.env` + mnemonic as comments). 3-tier wallet split recommended: $100 hot / $300 warm / $600 cold with KMS + isolated signer subprocess.
 2. **MEV sandwich tax = ~40% annualised drag** if unmitigated. Required defenses: Jito bundles (tip-based, not pub-mempool) + limit orders + illiquidity blocklist + oracle gate rejecting trades >0.5% off Pyth spot.
-3. **No perps at $1k scale.** Liquidation cascade risk dwarfs the leverage benefit. Solana spot only via Jupiter.
+3. **No perps at $1k scale.** Liquidation cascade risk dwarfs the upside of using margin at that account size. Solana spot only via Jupiter.
 4. **Canadian NI 31-103 exemption path**: position Phase 2 product as "quantitative market data + research content," never recommend / personalize / custody. Sole proprietor until $60-80k/yr, then CCPC in home province.
 5. **SR&ED R&D tax credit is the hidden goldmine** for Canadian solo devs: 35-43% refundable on imputed founder-salary rate of R&D spend. Likely outvalues 12-24 months of $1k trading P&L. Start the logbook day 1.
 6. **Oracle Cloud Always Free** (4 ARM cores, 24 GB RAM, forever) is the right host at this scale. Systemd native, not Docker. $0/mo at zero P&L.
@@ -103,7 +103,7 @@ Attribution appreciated but not required.
 ## ❓ FAQ
 
 **Q: This is a lot of research for free. What's the catch?**
-A: None. The research is public — it's the engineering, risk discipline, and ongoing iteration that's the hard part. If the research saves you a month, a tip in SOL is appreciated but never required.
+A: None. The research is public. It's the engineering, risk discipline, and ongoing iteration that's the hard part. If the research saves you a month, a tip in SOL is appreciated but never required.
 
 **Q: Is this actually useful for non-Solana quants?**
 A: ~70% jurisdiction/stack-neutral. Infra, risk, security, architecture apply broadly. Trading + compliance sections are Solana / Canada specific.
@@ -120,8 +120,8 @@ A: No. Not a recommendation on any trade, token, or security. Engineering + stra
 
 Writeups that expand on the bundle:
 
-- **[10 non-obvious findings from the playbook build](https://dev.to/sai_93caeceb4f6a4d9969910/i-built-a-solana-signal-engine-solo-heres-the-150-page-playbook-246k)** (dev.to) — wallet compromise postmortem, MEV sandwich tax math, 3-tier wallet architecture, Canadian NI 31-103 exemption, SR&ED credit, 30-day paper gate.
-- **[I shipped an x402 AI-crawler paywall in 3 hours on Vercel's free tier](https://dev.to/sai_93caeceb4f6a4d9969910/i-shipped-an-x402-ai-crawler-paywall-in-3-hours-on-vercels-free-tier-272m)** (dev.to) — the Next.js 16 + `@x402/next` stack, the three deploy gotchas, full proxy code.
+- **[10 non-obvious findings from the playbook build](https://dev.to/sai_93caeceb4f6a4d9969910/i-built-a-solana-signal-engine-solo-heres-the-150-page-playbook-246k)** (dev.to). Covers wallet compromise postmortem, MEV sandwich tax math, 3-tier wallet architecture, Canadian NI 31-103 exemption, SR&ED credit, 30-day paper gate.
+- **[I shipped an x402 AI-crawler paywall in 3 hours on Vercel's free tier](https://dev.to/sai_93caeceb4f6a4d9969910/i-shipped-an-x402-ai-crawler-paywall-in-3-hours-on-vercels-free-tier-272m)** (dev.to). Covers the Next.js 16 + `@x402/next` stack, the three deploy gotchas, full proxy code.
 - Also on Hashnode: [solana-developer.hashnode.dev](https://solana-developer.hashnode.dev/)
 
 ---
@@ -130,10 +130,10 @@ Writeups that expand on the bundle:
 
 Want the playbook as a PDF, or more structured sidecars? All direct-pay, no platform middleman:
 
-- **[cipher-checkout.vercel.app](https://cipher-checkout.vercel.app/)** — three products, pay by card (Stripe) or crypto (Base USDC, Solana USDC, BTC):
-  - **[Solana Solo-Dev Playbook (PDF)](https://buy.stripe.com/9B6aEX94xh1NgiXaRy2Ry0a) — $9** — 150-page playbook, same content as this repo but as one offline-ready PDF. Trading, risk, security, architecture, revenue, compliance, infra — solo mode, 2026.
-  - **[x402 Paid Endpoint Starter Kit](https://buy.stripe.com/9B6cN55SlfXJ4Af9Nu2Ry09) — $19** — Next.js 16 starter repo + 7-page tutorial PDF + one-command Vercel deploy. Working x402 endpoint.
-  - **[Solana Bot Toolkit Walkthrough](https://buy.stripe.com/aFa14n2G9bHt3wb4ta2Ry0b) — $29** — Deep walkthrough of the MIT-licensed [cipher-solana-bot-toolkit](https://github.com/cryptomotifs/cipher-solana-bot-toolkit). 5-module integration guide, gotcha matrix, anti-patterns.
+- **[cipher-checkout.vercel.app](https://cipher-checkout.vercel.app/)**. Three products, pay by card (Stripe) or crypto (Base USDC, Solana USDC, BTC):
+  - **[Solana Solo-Dev Playbook (PDF)](https://buy.stripe.com/9B6aEX94xh1NgiXaRy2Ry0a), $9.** 150-page playbook, same content as this repo but as one offline-ready PDF. Trading, risk, security, architecture, revenue, compliance, infra, solo mode, 2026.
+  - **[x402 Paid Endpoint Starter Kit](https://buy.stripe.com/9B6cN55SlfXJ4Af9Nu2Ry09), $19.** Next.js 16 starter repo + 7-page tutorial PDF + one-command Vercel deploy. Working x402 endpoint.
+  - **[Solana Bot Toolkit Walkthrough](https://buy.stripe.com/aFa14n2G9bHt3wb4ta2Ry0b), $29.** Deep walkthrough of the MIT-licensed [cipher-solana-bot-toolkit](https://github.com/cryptomotifs/cipher-solana-bot-toolkit). 5-module integration guide, gotcha matrix, anti-patterns.
 
 ---
 
@@ -143,7 +143,7 @@ This is free + MIT. If it saved you time, tips in SOL are appreciated:
 
 `cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy`
 
-No pressure — star the repo or share it and that's equally valued.
+No pressure. Star the repo or share it and that's equally valued.
 
 Landing page with QR code: **https://cryptomotifs.github.io/cipher-starter/**
 
@@ -157,7 +157,7 @@ Solo Canadian dev (Ontario, ET). Available 20 hr/wk for x402 / MCP / Solana inte
 
 | # | Service | Price | Duration |
 |---|---------|-------|----------|
-| 1 | Wire x402 into your Next.js / Node app — merged PR + live test | **$900** | 2 days |
+| 1 | Wire x402 into your Next.js / Node app (merged PR + live test) | **$900** | 2 days |
 | 2 | Solana bot architecture + security review (3-tier wallet, MEV defense, Jito) | **$1000** | 1 day |
 | 3 | AI-agent paid-API: 0 → live on Base with MCP wrapper | **$1200** | 3 days |
 
@@ -171,16 +171,16 @@ Solo Canadian dev (Ontario, ET). Available 20 hr/wk for x402 / MCP / Solana inte
 
 [![MCPize — cipher-x402-mcp](https://img.shields.io/badge/MCPize-cipher--x402--mcp%20%240%20%2F%20%249%20%2F%20%2429%20%2F%20%2499-00d084)](https://mcpize.com/mcp/cipher-x402-mcp)
 
-- **[cipher-solana-bot-toolkit](https://github.com/cryptomotifs/cipher-solana-bot-toolkit)** — free MIT: flash-loan router, volume bot, arb/MEV predator, memecoin launcher, copy trader. 5 scrubbed modules extracted from months of private iteration. Pair with this playbook.
-- **[cipher-x402-mcp](https://github.com/cryptomotifs/cipher-x402-mcp)** — free MIT MCP server exposing 8 Solana + macro tools to any MCP-aware client, 7 of them gated via x402 USDC on Base. Managed hosted plans ($0/$9/$29/$99) live on **[MCPize](https://mcpize.com/mcp/cipher-x402-mcp)**.
-- **[cipher-solana-wallet-audit](https://github.com/cryptomotifs/cipher-solana-wallet-audit)** — free GitHub Action (v1.1.0) that fails CI on plaintext Solana private keys.
-- **[cipher-scan](https://cipher-scan-three.vercel.app)** — paste any Solana wallet, get portfolio value + hygiene flags (dust, stale stake accounts, low-liquidity warnings) + referral CTAs for Jupiter/Backpack/Drift/Kamino. No signup, no tracking.
+- **[cipher-solana-bot-toolkit](https://github.com/cryptomotifs/cipher-solana-bot-toolkit)**. Free MIT: flash-loan router, volume bot, arb/MEV predator, memecoin launcher, copy trader. 5 scrubbed modules extracted from months of private iteration. Pair with this playbook.
+- **[cipher-x402-mcp](https://github.com/cryptomotifs/cipher-x402-mcp)**. Free MIT MCP server exposing 8 Solana + macro tools to any MCP-aware client, 7 of them gated via x402 USDC on Base. Managed hosted plans ($0/$9/$29/$99) live on **[MCPize](https://mcpize.com/mcp/cipher-x402-mcp)**.
+- **[cipher-solana-wallet-audit](https://github.com/cryptomotifs/cipher-solana-wallet-audit)**. Free GitHub Action (v1.1.0) that fails CI on plaintext Solana private keys.
+- **[cipher-scan](https://cipher-scan-three.vercel.app)**. Paste any Solana wallet, get portfolio value plus hygiene flags (dust, stale stake accounts, low-liquidity warnings) plus referral CTAs for Jupiter/Backpack/Drift/Kamino. No signup, no tracking.
 
 ---
 
 ## Contact
 
 - Mastodon: [@cryptomotifs@techhub.social](https://techhub.social/@cryptomotifs)
-- GitHub issues — for bundle errata / typo PRs
+- GitHub issues, for bundle errata / typo PRs
 
 Built by someone who actually did the work. Questions → open a GitHub issue.
