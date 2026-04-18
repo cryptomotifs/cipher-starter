@@ -136,6 +136,26 @@ No pressure — star the repo or share it and that's equally valued.
 
 Landing page with QR code: **https://cryptomotifs.github.io/cipher-starter/**
 
+---
+
+## 💼 Hire me
+
+Solo Canadian dev (Ontario, ET). Available 20 hr/wk for x402 / MCP / Solana integration + Solana bot architecture work. The 150-page playbook is the same engineering discipline I apply on paid engagements.
+
+**Fixed-price SKUs:**
+
+| # | Service | Price | Duration |
+|---|---------|-------|----------|
+| 1 | Wire x402 into your Next.js / Node app — merged PR + live test | **$900** | 2 days |
+| 2 | Solana bot architecture + security review (3-tier wallet, MEV defense, Jito) | **$1000** | 1 day |
+| 3 | AI-agent paid-API: 0 → live on Base with MCP wrapper | **$1200** | 3 days |
+
+**Hourly:** $150/hr open-scope, 5-hour minimum block. $125/hr if 40+ hours upfront.
+
+**Payout:** USDC on Base `0x2a33D2414312e8776dA4011c2586c2d067267210`, USDC on Solana `cR9KrbsLVJvir5rY9cfY3WeNoxMwUGofzpCoVyobryy`, or Wise-USD on request.
+
+**Engage:** open an issue titled `[Consulting]: <what you need>` on [cryptomotifs/cipher-x402-mcp](https://github.com/cryptomotifs/cipher-x402-mcp/issues/new), or DM [@cryptomotifs@techhub.social](https://techhub.social/@cryptomotifs). I reply within the hour with scope + 50% deposit address.
+
 ## Free tools + related repos
 
 - **[cipher-solana-bot-toolkit](https://github.com/cryptomotifs/cipher-solana-bot-toolkit)** — free MIT: flash-loan router, volume bot, arb/MEV predator, memecoin launcher, copy trader. 5 scrubbed modules extracted from months of private iteration. Pair with this playbook.
