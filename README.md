@@ -158,6 +158,8 @@ Solo Canadian dev (Ontario, ET). Available 20 hr/wk for x402 / MCP / Solana inte
 
 ## Free tools + related repos
 
+[![MCPize — cipher-x402-mcp](https://img.shields.io/badge/MCPize-cipher--x402--mcp%20%240%20%2F%20%249%20%2F%20%2429%20%2F%20%2499-00d084)](https://mcpize.com/mcp/cipher-x402-mcp)
+
 - **[cipher-solana-bot-toolkit](https://github.com/cryptomotifs/cipher-solana-bot-toolkit)** — free MIT: flash-loan router, volume bot, arb/MEV predator, memecoin launcher, copy trader. 5 scrubbed modules extracted from months of private iteration. Pair with this playbook.
 - **[cipher-x402-mcp](https://github.com/cryptomotifs/cipher-x402-mcp)** — free MIT MCP server exposing 8 Solana + macro tools to any MCP-aware client, 7 of them gated via x402 USDC on Base. Managed hosted plans ($0/$9/$29/$99) live on **[MCPize](https://mcpize.com/mcp/cipher-x402-mcp)**.
 - **[cipher-solana-wallet-audit](https://github.com/cryptomotifs/cipher-solana-wallet-audit)** — free GitHub Action (v1.1.0) that fails CI on plaintext Solana private keys.
