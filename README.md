@@ -167,7 +167,7 @@ Solo Canadian dev (Ontario, ET). Available 20 hr/wk for x402 / MCP / Solana inte
 
 **Engage:** open an issue titled `[Consulting]: <what you need>` on [cryptomotifs/cipher-x402-mcp](https://github.com/cryptomotifs/cipher-x402-mcp/issues/new), or DM [@cryptomotifs@techhub.social](https://techhub.social/@cryptomotifs). I reply within the hour with scope + 50% deposit address.
 
-**Also:** prompt packs for Solana / x402 / MCP devs at [amrindermagic.gumroad.com](https://amrindermagic.gumroad.com/).
+**Also:** prompt packs for Solana / x402 / MCP devs at [cipher-checkout.vercel.app](https://cipher-checkout.vercel.app/) — 5 packs covering Anchor audit, x402 + MCP design, Solana bot engineering, crypto dev productivity, and a 20%-off bundle. Card or crypto.
 
 ## Free tools + related repos
 
