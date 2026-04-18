@@ -126,6 +126,17 @@ Writeups that expand on the bundle:
 
 ---
 
+## 🛒 Buy
+
+Want the playbook as a PDF, or more structured sidecars? All direct-pay, no platform middleman:
+
+- **[cipher-checkout.vercel.app](https://cipher-checkout.vercel.app/)** — three products, pay by card (Stripe) or crypto (Base USDC, Solana USDC, BTC):
+  - **[Solana Solo-Dev Playbook (PDF)](https://buy.stripe.com/9B6aEX94xh1NgiXaRy2Ry0a) — $9** — 150-page playbook, same content as this repo but as one offline-ready PDF. Trading, risk, security, architecture, revenue, compliance, infra — solo mode, 2026.
+  - **[x402 Paid Endpoint Starter Kit](https://buy.stripe.com/9B6cN55SlfXJ4Af9Nu2Ry09) — $19** — Next.js 16 starter repo + 7-page tutorial PDF + one-command Vercel deploy. Working x402 endpoint.
+  - **[Solana Bot Toolkit Walkthrough](https://buy.stripe.com/aFa14n2G9bHt3wb4ta2Ry0b) — $29** — Deep walkthrough of the MIT-licensed [cipher-solana-bot-toolkit](https://github.com/cryptomotifs/cipher-solana-bot-toolkit). 5-module integration guide, gotcha matrix, anti-patterns.
+
+---
+
 ## 🙏 Support
 
 This is free + MIT. If it saved you time, tips in SOL are appreciated:
