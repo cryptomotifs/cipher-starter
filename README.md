@@ -167,6 +167,8 @@ Solo Canadian dev (Ontario, ET). Available 20 hr/wk for x402 / MCP / Solana inte
 
 **Engage:** open an issue titled `[Consulting]: <what you need>` on [cryptomotifs/cipher-x402-mcp](https://github.com/cryptomotifs/cipher-x402-mcp/issues/new), or DM [@cryptomotifs@techhub.social](https://techhub.social/@cryptomotifs). I reply within the hour with scope + 50% deposit address.
 
+**Also:** prompt packs for Solana / x402 / MCP devs at [amrindermagic.gumroad.com](https://amrindermagic.gumroad.com/).
+
 ## Free tools + related repos
 
 [![MCPize — cipher-x402-mcp](https://img.shields.io/badge/MCPize-cipher--x402--mcp%20%240%20%2F%20%249%20%2F%20%2429%20%2F%20%2499-00d084)](https://mcpize.com/mcp/cipher-x402-mcp)
